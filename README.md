@@ -15,4 +15,6 @@ washington.csv
 
 ### Credits
 stackoverflow.com is consulted for questions regarding coding.
+Another useful resource for pandas is https://pandas.pydata.org/pandas-docs/stable/
+
 
