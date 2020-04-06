@@ -1,3 +1,5 @@
+"""This script explores data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.  It is imports data on each city and computes descriptive statistics. It requests input from the user to select a city, a month, and a day.  Also, the month/day response can be 'all' for all months in the file and/or all days in a month or all months.  Statiscits are calculated based on these user inputs."""
+
 from random import sample
 import time
 import pandas as pd
@@ -63,7 +65,7 @@ def get_filters():
             print('\nInput for day attempted\n')
             
 
-    print('-'*40)
+    #print('-'*40)
     print(city, month, day)
     return city, month, day
 
@@ -94,8 +96,6 @@ def load_data(city, month, day):
     if month != 'all':
         # use the index of the months list to get the corresponding int
         month = MONTHS.index(month) + 1
-        #print(df.head())
-        #print(month)
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
@@ -127,8 +127,8 @@ def time_stats(df):
     print("\nThe most popular hour is {}.".format(popular_hour))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print('-'*40)
 
 
 def station_stats(df):
@@ -153,8 +153,8 @@ def station_stats(df):
                                      
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print('-'*40)
 
 
 def trip_duration_stats(df):
@@ -172,8 +172,8 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print("\nThe mean travel time is {} seconds. ".format(mean_travel_time))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print('-'*40)
 
 
 def user_stats(df):
@@ -207,9 +207,9 @@ def user_stats(df):
         print("\nThe most common user birthday is: {}\n".format(most_common_bday))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print('-'*40)
 
     
 def raw_data(df):
@@ -232,9 +232,9 @@ def raw_data(df):
             print('\nInput for raw data attempted\n')
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print("\nThis took %s seconds." % (time.time() - start_time))
+    #print('-'*40)
 
 
 
