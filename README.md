@@ -17,5 +17,6 @@ washington.csv
 stackoverflow.com is consulted for questions regarding coding.
 Another useful resource for pandas is: https://pandas.pydata.org/pandas-docs/stable/
 The NumPy manual is another good resource for python users: https://docs.scipy.org/doc/numpy-1.13.0/contents.html
+added this line so I can fix my commit message with the correct type
 
 

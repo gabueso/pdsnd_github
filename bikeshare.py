@@ -1,4 +1,4 @@
-"""This script explores data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.  It is imports data on each city and computes descriptive statistics. It requests input from the user to select a city, a month, and a day.  Also, the month/day response can be 'all' for all months in the file and/or all days in a month or all months.  Statiscits are calculated based on these user inputs."""
+"""This script explores data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.  It is imports data on each city and computes descriptive statistics. It requests input from the user to select a city, a month, and a day.  Also, the month/day response can be 'all' for all months in the file and/or all days in a month or all months.  Statiscits are calculated based on these user inputs. """
 
 from random import sample
 import time
